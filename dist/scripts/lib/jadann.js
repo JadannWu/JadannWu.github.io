@@ -591,7 +591,7 @@ var Jadann = {};
             return false;
         }
 
-        //utility.isFunction(callback) && callback(data.code === 200 ? true : false, data.msg, data.data, xhr);
+        utility.isFunction(callback) && callback(data.code === 200 ? true : false, data.msg, data.data, xhr);
         return true;
     }
 

@@ -9,7 +9,7 @@
 // 引入 gulp及组件
 var gulp    = require('gulp'), //基础库
     runsequence = require('run-sequence'),     //顺序执行任务,gulp默认是异步的
-    sass = require('gulp-ruby-sass'),          //sass
+    sass = require('gulp-sass'),
     minifycss = require('gulp-minify-css'),    //css压缩
     jshint = require('gulp-jshint'),           //js检查
     uglify  = require('gulp-uglify'),          //js压缩
@@ -66,11 +66,11 @@ gulp.task('css', function () {
 });
 
 //编译sass
-gulp.task('sass',function(){
-    var sassSrc = './src/contents/**/*.sass',
-        sassDst = './dist/contents';
+gulp.task('sass',function (){
+    var sassSrc = './src/contents/**/*.scss',
+        sassDst = './dist/contents/';
     return gulp.src(sassSrc)
-        .pipe( sass() )
+        .pipe(sass().on('error', sass.logError) )
         .pipe( gulp.dest(sassDst));
 });
 
@@ -215,14 +215,13 @@ gulp.task('watch',function(){
             return console.log(err);
         }
 
+        // 监听scss
+        gulp.watch('./src/contents/**/*.scss',['sass']);
+
         // 监听css
         gulp.watch('./src/css/*.css', function(){
             gulp.run('css');
         });
-
-
-
-
 
         // 监听js
         gulp.watch('./src/js/app/**/*.js', function(){
@@ -251,11 +250,11 @@ gulp.task('watch',function(){
 
 // 默认任务 清空图片、样式、js并重建 运行语句 gulp
 gulp.task('default', ['clean'], function(){
-    gulp.start('bowerjslib','js','jslib','css','html','watch');
+    gulp.start('bowerjslib','js','jslib','sass','css','html','watch');
 });
 
 gulp.task('build', function(callback) {
-    runsequence('clean','bowerjslib','js','jslib','css','html','watch');
+    runsequence('clean','bowerjslib','js','jslib','sass','css','html','watch');
 });
 
 gulp.task('build:nowatch', function(callback) {

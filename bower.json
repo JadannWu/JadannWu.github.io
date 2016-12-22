@@ -1,0 +1,20 @@
+{
+  "name": "jadann",
+  "description": "Jadann_Bolg_WebSite",
+  "main": "index.js",
+  "authors": [
+    "Jadann"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

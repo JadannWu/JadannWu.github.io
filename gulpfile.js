@@ -7,7 +7,7 @@
  */
 
 // 引入 gulp及组件
-var gulp    = require('gulp'), //基础库
+var gulp= require('gulp'), //基础库
     runsequence = require('run-sequence'),     //顺序执行任务,gulp默认是异步的
     sass = require('gulp-sass'),
     minifycss = require('gulp-minify-css'),    //css压缩
@@ -68,12 +68,26 @@ gulp.task('css', function () {
 //编译sass
 gulp.task('sass',function (){
     var sassSrc = './src/contents/**/*.scss',
-        sassDst = './dist/contents/';
+        sassDst = './src/contents/';
     return gulp.src(sassSrc)
         .pipe(sass().on('error', sass.logError) )
         .pipe( gulp.dest(sassDst));
 });
 
+//合并js
+gulp.task('scripts', function() {
+    var base = './src/scripts/lib/';
+    var jsSrc = [base+'jquery-1.11.3.min.js',
+        base+'json2.js',
+        base+'common.js',
+        base+'jadann.db.manage.js',
+        base+'user.db.js',
+        base+'jadann.promptbox.js'
+    ];
+    return gulp.src(jsSrc)
+        .pipe(concat('jadann.js'))
+        .pipe(gulp.dest('./dist/scripts/lib/'));
+});
 
 // js处理
 gulp.task('js', function () {
@@ -111,7 +125,7 @@ gulp.task('bowerjslib', function () {
 gulp.task('jslib', function () {
     gulp.src('./src/scripts/lib/**/*.min.js')
         .pipe(flatten())
-        .pipe(gulp.dest('./dist/js/lib'));
+        .pipe(gulp.dest('./dist/scripts/lib'));
 
 });
 
@@ -224,14 +238,12 @@ gulp.task('watch',function(){
         });
 
         // 监听js
-        gulp.watch('./src/js/app/**/*.js', function(){
+        gulp.watch('./src/scripts/**/*.js', function(){
             gulp.run('js');
         });
 
-        // 监听jslib
-        gulp.watch('./src/js/lib/**/*.js', function(){
-            gulp.run('jslib');
-        });
+        gulp.watch('./src/scripts/lib/**/*.js', ['scripts','jslib']);
+
 
         // 监听bowerjslib
         gulp.watch('bower_components/**/*.min.js', function(){
@@ -250,13 +262,13 @@ gulp.task('watch',function(){
 
 // 默认任务 清空图片、样式、js并重建 运行语句 gulp
 gulp.task('default', ['clean'], function(){
-    gulp.start('bowerjslib','js','jslib','sass','css','html','watch');
+    gulp.start('bowerjslib','js','jslib','scripts','sass','css','html','watch');
 });
 
 gulp.task('build', function(callback) {
-    runsequence('clean','bowerjslib','js','jslib','sass','css','html','watch');
+    runsequence('clean','bowerjslib','js','jslib','scripts','sass','css','html','watch');
 });
 
 gulp.task('build:nowatch', function(callback) {
-    runsequence('clean','bowerjslib','js','jslib','css','html');
+    runsequence('clean','bowerjslib','js','jslib','scripts','css','html');
 });

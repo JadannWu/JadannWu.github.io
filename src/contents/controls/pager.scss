@@ -1,0 +1,179 @@
+﻿.sapi-pager{
+    font-size:12px;
+    line-height:30px;
+
+    span{
+        vertical-align:middle;
+    }
+
+    .pager-btn{
+        display:inline-block;
+        *display:inline;
+        *zoom:1;
+        width:20px;
+        height:20px;
+        background-color:#FFFFFF;
+        background-repeat:no-repeat;
+        background-position:center center;
+        vertical-align:middle;
+        cursor:pointer;
+
+        span{
+            display:none;
+        }
+    }
+    .pager-btn.disabled{
+        cursor:not-allowed;
+    }
+
+    /*.pager-btn:hover{
+        background-color:#b7fae0;
+    }
+
+    .pager-btn.disabled:hover{
+        background-color:#FFFFFF;
+    }*/
+
+    .pager-refresh{
+        background-image:url(images/pager-refresh.png);
+    }
+
+    .pager-first{
+        background-image:url(images/pager-first.png);
+    }
+
+    .pager-first.disabled{
+        background-image:url(images/pager-first-disabled.png);
+    }
+
+    .pager-prev{
+         background-image:url(images/pager-prev.png);
+    }
+
+    .pager-prev.disabled{
+        background-image:url(images/pager-prev-disabled.png);
+    }
+
+    .pager-next{
+        background-image:url(images/pager-next.png);
+    }
+    .pager-next.disabled{
+        background-image:url(images/pager-next-disabled.png);
+    }
+    .pager-last{
+         background-image:url(images/pager-next.png);
+    }
+    .pager-last.disabled{
+         background-image:url(images/pager-next-disabled.png);
+    }
+
+    .pager-size{
+        width:60px;
+        border:1px solid #003e68;
+    }
+
+    .pager-current{
+        width:25px;
+    }
+}
+
+.pager-partysu{
+    line-height:30px;
+    background-color:#FFF;
+
+    span{
+        vertical-align:baseline
+    }
+
+    .pager-size{
+        margin: 0 8px;
+        border:1px solid #e7ecf1;
+        padding:5px;
+        outline-style: none;
+    }
+
+    .pager-btn,.ellipsis-page{
+        display:inline-block;
+        width:auto;
+        height:auto;
+        line-height:30px;
+        border:1px solid #e7ecf1;
+        border-right-color:#FFF;
+        min-width:30px;
+        color:#666;
+        text-align:center;
+        vertical-align:middle;
+        &:hover{
+            color:#3995d3;
+        }
+    }
+
+    .ellipsis-page{
+        cursor:default;
+        &:hover{
+            color:#666;
+        }
+    }
+
+    .pager-prev,.pager-next{
+        width:32px;
+        height:32px;
+    }
+
+    .pager-prev{
+        margin-left:20px;
+        font-size:14px;
+        background-image:none;
+    }
+    .pager-btn-wrap{
+        display:inline;
+        a:hover{
+            text-decoration: none;
+        }
+    }
+
+    .pager-next{
+        margin-right:20px;
+        border-right:1px solid #e7ecf1;
+        background-image:none;
+        font-size:14px;
+    }
+    .pager-next.disabled,.pager-prev.disabled{
+        background-image:none;
+        color:#ccc;
+    }
+
+    .pager-refresh{
+        background-color:#FFF;
+        border:1px solid #e7ecf1;
+        background-image:none;
+        line-height:30px;
+        vertical-align:middle;
+        padding:0 10px;
+        margin-right:10px;
+        &:hover{
+            border:1px solid #3995d3 ;
+            color:#3995d3;
+        }
+    }
+
+    .pager-current{
+        padding:5px 7px;
+        border:1px solid #e7ecf1;
+        text-align:center;
+        margin:0 8px;
+        height:30px;
+        outline-style: none;
+        width:30px;
+        text-indent: 0;
+    }
+
+    .pager-active{
+        background-color:#3995d3;
+        color:#FFF;
+        border-color:#3995d3;
+        &:hover{
+            color:#FFF;
+        }
+    }
+}

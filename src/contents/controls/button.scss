@@ -1,0 +1,218 @@
+﻿$defaultColor:#3994D2;
+$activeColor:#307EB3;
+$disabledColor:#9CCAE9;
+
+@mixin font($fontColor,$fontSize:14px,$fontWeight:normal){
+    font-size:$fontSize;
+    color:$fontColor;
+    font-weight:$fontWeight;
+}
+
+.btn {
+  color: $defaultColor;
+  border-radius:2px;
+  cursor:pointer;
+  @include font($defaultColor);
+}
+
+.btn-simple{
+    border:0;
+    background:none;
+}
+
+.btn-alone{
+    background-color:#3995d3;
+    color:#fff;
+}
+
+.btn-group{
+    color:#3995d3;
+    background-color:#fff;
+}
+
+.btn-default {
+  background-color:#fff;
+  border:solid 1px #3995d3;
+  border-radius: 2px;
+  padding: 2px 15px;
+  line-height: 28px;
+  vertical-align: middle; }
+  .btn-default:hover {
+    background-color: #3995d3;
+    color: #FFFFFF; }
+
+.btn-link {
+  line-height: 25px;
+  vertical-align: middle;
+  border: none;
+  padding: 0 10px;
+  cursor:pointer;
+  background-color: transparent; }
+  .btn-link:hover {
+    text-decoration: underline; }
+
+.btn-icon {
+  border:solid 1px #3995d3;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  vertical-align: middle;
+  padding:0 10px 0 32px;
+  line-height: 30px;
+  height:30px;
+}
+
+.btn-icon:hover {
+    background-color: #3995d3;
+    color: #FFFFFF; }
+
+.icon-alone {
+  padding:0;
+  border: none;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  vertical-align: middle; }
+  .icon-alone span {
+    display: none; }
+
+
+.icon-alone.btn-add{
+    background-image: url('/content/newthjk/images/btn-add-alone.png');
+}
+
+.icon-alone.btn-close{
+    background-image: url('/content/newthjk/images/btn-close-alone.png');
+}
+
+.btn-group.btn-add {
+  background-image: url(/content/newthjk/images/btn-add.png); }
+
+.btn-alone.btn-add,.btn-group.btn-add:hover{
+    background-image: url(/content/newthjk/images/btn-add-active.png); }
+
+.btn-group.btn-delete {
+  background-image: url(/content/newthjk/images/btn-delete.png); }
+
+.btn-alone.btn-delete,.btn-group.btn-delete:hover {
+  background-image: url(/content/newthjk/images/btn-delete-active.png); }
+
+//excel导入
+.btn-group.btn-import {
+  background-image: url(/content/newthjk/images/btn-export.png); }
+
+.btn-alone.btn-import,.btn-group.btn-import:hover {
+  background-image: url(/content/newthjk/images/btn-export-active.png); }
+//录入
+.btn-group.btn-entry{
+  background: url(/content/newthjk/controls/images/entry.png) no-repeat 10px;
+  &:hover{
+	background: #3995d3 url(/content/newthjk/controls/images/entry-on.png) no-repeat 10px;
+  }
+}
+//数据导入
+.btn-group.btn-export-data {
+  background-image: url(/content/newthjk/images/btn-export-data.png); }
+
+.btn-alone.btn-export-data,.btn-group.btn-export-data:hover {
+  background-image: url(/content/newthjk/images/btn-export-data-active.png); }
+
+//更新记录
+.btn-group.btn-updatedata {
+  background-image: url(/content/newthjk/images/btn-updatedata.png); }
+
+.btn-alone.btn-updatedata,.btn-group.btn-updatedata:hover {
+  background-image: url(/content/newthjk/images/btn-updatedata-active.png); }
+
+.btn-group.btn-set {
+  background-image: url(/content/newthjk/images/btn-set.png); }
+
+.btn-alone.btn-set,.btn-group.btn-set:hover {
+  background-image: url(/content/newthjk/images/btn-set-active.png); }
+
+//新增月度数据
+.btn-group.btn-add-monthlydata{
+    background-image: url(/content/newthjk/images/btn-add-monthlydata.png); }
+
+.btn-alone.btn-add-monthlydata,.btn-group.btn-add-monthlydata:hover{
+    background-image: url(/content/newthjk/images/btn-add-monthlydata-active.png); }
+
+//增加楼层
+.btn-group.btn-add-floor{
+    background-image: url(/content/newthjk/images/btn-add-floor.png); }
+
+.btn-alone.btn-add-floor,.btn-group.btn-add-floor:hover{
+    background-image: url(/content/newthjk/images/btn-add-floor-active.png); }
+
+//修改
+.btn-group.btn-edit{
+    background-image: url(/content/newthjk/images/btn-edit.png); }
+
+.btn-alone.btn-edit,.btn-group.btn-edit:hover{
+    background-image: url(/content/newthjk/images/btn-edit-active.png); }
+
+//历史版本
+.btn-group.btn-revision{
+    background-image: url(/content/newthjk/images/btn-revision.png); }
+
+.btn-alone.btn-revision,.btn-group.btn-revision:hover{
+    background-image: url(/content/newthjk/images/btn-revision-active.png); }
+
+.btn-group.btn-add-data{
+    background-image: url(/content/newthjk/images/btn-add-data.png);
+}
+
+.btn-alone.btn-add-data,.btn-group.btn-add-data:hover{
+    background-image: url(/content/newthjk/images/btn-add-data-active.png);
+}
+
+.btn-group.btn-salesdata{
+    background-image: url(/content/newthjk/images/btn-salesdata.png); }
+
+.btn-alone.btn-salesdata,.btn-group.btn-salesdata:hover{
+    background-image: url(/content/newthjk/images/btn-salesdata-active.png); }
+
+.btn-group.btn-monitor{
+    background-image: url(/content/newthjk/images/btn-monitor.png); }
+
+.btn-alone.btn-monitor,.btn-group.btn-monitor:hover{
+    background-image: url(/content/newthjk/images/btn-monitor-active.png); }
+
+.btn-alone.btn-tocenter{
+    background-image: url(/content/newthjk/images/btn-data-center.png); }
+
+// 上移一行
+.btn-moveup{
+    background-image:url(/content/newthjk/images/i-gray-up.png);
+
+    &:hover{
+        background-image:url(/content/newthjk/images/i-blue-up.png);
+    }
+}
+
+// 下移一行
+.btn-movedown{
+    background-image:url(/content/newthjk/images/i-gray-down.png);
+
+    &:hover{
+        background-image:url(/content/newthjk/images/i-blue-down.png);
+    }
+}
+
+// 删除行
+.btn-deleterow{
+    background-image:url(/content/newthjk/images/i-gray-delete.png);
+    &:hover{
+        background-image:url(/content/newthjk/images/i-red-delete.png);
+    }
+}
+
+// 新增行
+.btn-addrow{
+    background-image:url(/content/newthjk/images/i-gray-add.png);
+
+    &:hover{
+        background-image:url(/content/newthjk/images/i-blue-add.png);
+    }
+}

@@ -1,0 +1,304 @@
+@charset "UTF-8";
+@import url(bootstrap.css);
+.h1 {
+  font-size: 38px;
+  color: #ea2e49;
+  font-weight: normal; }
+
+.h2 {
+  font-size: 24px;
+  color: #3995d3;
+  font-weight: normal; }
+
+.h3 {
+  font-size: 20px;
+  color: #3995d3;
+  font-weight: normal; }
+
+.h4 {
+  font-size: 16px;
+  color: #3995d3;
+  font-weight: normal; }
+
+.h5 {
+  font-size: 14px;
+  color: #3995d3;
+  font-weight: normal; }
+
+.h6 {
+  font-size: 12px;
+  color: #3995d3;
+  font-weight: normal; }
+
+.text-center {
+  text-align: center; }
+
+.mb10 {
+  margin-bottom: 10px; }
+
+.mb20 {
+  margin-bottom: 20px; }
+
+.pl10 {
+  padding-left: 10px; }
+
+.pr10 {
+  padding-right: 10px; }
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+article, aside, figure, footer, header, nav, section, details, summary {
+  display: block; }
+
+del {
+  text-decoration: line-through; }
+
+img, object, embed {
+  max-width: 100%; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ''; }
+
+body, button, input, select, textarea {
+  font-family: "微软雅黑", "Microsoft YaHei", "宋体", Song, Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; }
+
+body {
+  line-height: 180%;
+  font-size: 14px; }
+
+button, input, select, textarea {
+  font-size: 12px;
+  margin: 0; }
+
+h1, h2, h3 {
+  line-height: 40px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+h4, h5, h6 {
+  line-height: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+h1 {
+  font-size: 38px; }
+
+h2 {
+  font-size: 32px; }
+
+h3 {
+  font-size: 25px; }
+
+h4 {
+  font-size: 18px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  font-size: 12px; }
+
+address, cite, dfn, em, var {
+  font-style: normal; }
+
+code, kbd, pre, samp, tt {
+  font-family: "Courier New", Courier, monospace; }
+
+small {
+  font-size: 85%; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:focus {
+  outline: none; }
+
+abbr[title], acronym[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+q:before, q:after {
+  content: ''; }
+
+legend {
+  color: #000; }
+
+fieldset, img {
+  border: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: inherit;
+  font: 100%; }
+
+th {
+  font-weight: bold;
+  vertical-align: bottom; }
+
+td, td img {
+  font-weight: normal;
+  vertical-align: top; }
+
+hr {
+  border: none;
+  border-top: 1px solid #e3e3e3;
+  height: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  padding: 0; }
+
+/*html { overflow-y: scroll; }*/
+input, select {
+  vertical-align: middle; }
+
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+input[type="checkbox"] {
+  vertical-align: bottom; }
+
+select, input, textarea {
+  outline: none; }
+
+textarea {
+  resize: none; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif; }
+
+.clickable, input[type=button], input[type=submit], input[type=file], button {
+  cursor: pointer; }
+
+button {
+  width: auto;
+  overflow: visible;
+  outline: none; }
+
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  clear: both;
+  zoom: 1; }
+
+.input-wrap textarea, .input-wrap input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #cfdadd;
+  padding: 7px 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-family: '微软雅黑','Microsoft YaHei UI','Segoe UI',Tahoma,Geneva,Verdana,sans-serif; }
+  .input-wrap textarea:hover, .input-wrap textarea:focus, .input-wrap input:hover, .input-wrap input:focus {
+    border-color: #3995d3; }
+
+.input-wrap .readonly {
+  border-color: #dadada; }
+  .input-wrap .readonly:hover, .input-wrap .readonly:focus {
+    border-color: #dadada; }
+
+.input-icon-group {
+  position: relative; }
+  .input-icon-group input {
+    height: 38px;
+    padding: 10px 5px;
+    padding-left: 37px;
+    font-size: 14px; }
+  .input-icon-group .input-icon {
+    position: absolute;
+    text-align: center;
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+    display: block;
+    width: 38px;
+    height: 38px; }
+    .input-icon-group .input-icon span {
+      visibility: hidden; }
+
+.icon-username {
+  background: url(images/user.png) no-repeat center center; }
+
+.icon-password {
+  background: url(images/password.png) no-repeat center center; }
+
+.icon-repassword {
+  background: url(images/repassword.png) no-repeat center center; }
+
+.icon-search {
+  background: url(images/search.png) no-repeat center center; }
+
+.icon-code {
+  background: url(/images/code.png) no-repeat center center; }
+
+.icon-phone {
+  background: url(images/phone.png) no-repeat center center; }
+
+.icon-email {
+  background: url(images/email.png) no-repeat center center; }
+
+.input-search-group {
+  position: relative; }
+  .input-search-group input {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #3995d3;
+    padding: 7px 5px;
+    padding-right: 120px;
+    font-size: 14px;
+    font-family: '微软雅黑','Microsoft YaHei UI','Segoe UI',Tahoma,Geneva,Verdana,sans-serif; }
+    .input-search-group input:hover, .input-search-group input:focus {
+      border-color: #2c84bf; }
+  .input-search-group button {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    bottom: 1px;
+    width: 120px;
+    text-align: center;
+    height: auto;
+    background-color: #3995d3;
+    border: none;
+    color: #FFF; }
+    .input-search-group button:hover {
+      background-color: #2c84bf; }

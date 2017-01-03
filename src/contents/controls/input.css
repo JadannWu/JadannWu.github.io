@@ -1,0 +1,86 @@
+@charset "UTF-8";
+.input-wrap textarea, .input-wrap input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #cfdadd;
+  padding: 7px 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-family: '微软雅黑','Microsoft YaHei UI','Segoe UI',Tahoma,Geneva,Verdana,sans-serif; }
+  .input-wrap textarea:hover, .input-wrap textarea:focus, .input-wrap input:hover, .input-wrap input:focus {
+    border-color: #3995d3; }
+
+.input-wrap .readonly {
+  border-color: #dadada; }
+  .input-wrap .readonly:hover, .input-wrap .readonly:focus {
+    border-color: #dadada; }
+
+.input-icon-group {
+  position: relative; }
+  .input-icon-group input {
+    height: 38px;
+    padding: 10px 5px;
+    padding-left: 37px;
+    font-size: 14px; }
+  .input-icon-group .input-icon {
+    position: absolute;
+    text-align: center;
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+    display: block;
+    width: 38px;
+    height: 38px; }
+    .input-icon-group .input-icon span {
+      visibility: hidden; }
+
+.icon-username {
+  background: url(images/user.png) no-repeat center center; }
+
+.icon-password {
+  background: url(images/password.png) no-repeat center center; }
+
+.icon-repassword {
+  background: url(images/repassword.png) no-repeat center center; }
+
+.icon-search {
+  background: url(images/search.png) no-repeat center center; }
+
+.icon-code {
+  background: url(/images/code.png) no-repeat center center; }
+
+.icon-phone {
+  background: url(images/phone.png) no-repeat center center; }
+
+.icon-email {
+  background: url(images/email.png) no-repeat center center; }
+
+.input-search-group {
+  position: relative; }
+  .input-search-group input {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #3995d3;
+    padding: 7px 5px;
+    padding-right: 120px;
+    font-size: 14px;
+    font-family: '微软雅黑','Microsoft YaHei UI','Segoe UI',Tahoma,Geneva,Verdana,sans-serif; }
+    .input-search-group input:hover, .input-search-group input:focus {
+      border-color: #2c84bf; }
+  .input-search-group button {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    bottom: 1px;
+    width: 120px;
+    text-align: center;
+    height: auto;
+    background-color: #3995d3;
+    border: none;
+    color: #FFF; }
+    .input-search-group button:hover {
+      background-color: #2c84bf; }

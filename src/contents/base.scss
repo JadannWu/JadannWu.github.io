@@ -1,0 +1,56 @@
+﻿$mainColor:#ea2e49;
+$auxiliaryColor:#3995d3;
+$bgColor:#edf1f2;
+
+$mainFontColor:#333333;
+$auxiliaryFontColor:#666666;
+$disabledFontColor:#999999;
+
+@mixin font($fontSize,$fontColor,$fontWeight:normal){
+    font-size:$fontSize;
+    color:$fontColor;
+    font-weight:$fontWeight;
+}
+
+.h1{
+    @include font(38px,$mainColor);
+}
+
+.h2{
+    @include font(24px,$auxiliaryColor);
+}
+
+.h3{
+    @include font(20px,$auxiliaryColor);
+}
+
+.h4{
+    @include font(16px,$auxiliaryColor);
+}
+
+.h5{
+    @include font(14px,$auxiliaryColor);
+}
+
+.h6{
+    @include font(12px,$auxiliaryColor);
+}
+
+.text-center{
+    text-align:center;
+}
+
+.mb10{
+    margin-bottom:10px;
+}
+
+.mb20{
+    margin-bottom:20px;
+}
+
+.pl10{
+    padding-left:10px;
+}
+.pr10{
+    padding-right:10px;
+}

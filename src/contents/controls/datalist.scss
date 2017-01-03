@@ -1,0 +1,227 @@
+﻿// 产品库数据列表组件
+.datalist-group{
+    border:1px solid #3995d3;
+    background-color:#FFF;
+    margin-bottom:40px;
+    font-size:12px;
+
+    .datalist-title{
+        color:#FFF;
+        font-size:14px;
+        font-weight:normal;
+        background:#3995d3 url(images/icon-folder.png) no-repeat 10px center;
+        margin:0;
+        padding:12px 0 12px 35px;
+    }
+
+    .datalist-filter{
+        padding:0 10px;
+        border-bottom:1px solid #e7ecf1;
+        font-size:12px;
+        position:relative;
+
+        .filter-group{
+            border-bottom:1px solid #e7ecf1;
+        }
+
+        .last-filter-group{
+            border-bottom:none;
+        }
+
+        .filter-type{
+            color:#666666;
+            background-color:#f3f4f6;
+            width:80px;
+            text-align:center;
+            display:inline-block;
+            line-height:39px;
+            float:left;
+        }
+    }
+
+    .filter-result{
+        margin-top:10px;
+        border-bottom:1px solid #e7ecf1;
+        background-color:#f3f4f6;
+        position:relative;
+        padding-right:420px;
+        min-height:40px;
+
+        .result-text{
+            line-height:39px;
+            padding-left:20px;
+            font-size:12px;
+            font-weight:bold;
+            color:#333;
+        }
+
+        .result-item{
+            margin:0 5px;
+        }
+
+        #selectValueWrap{
+            padding-right:10px;
+        }
+            .select-value{
+        display:inline-block;
+        padding:4px 6px;
+        margin-left:10px;
+        border:1px solid #3995d3;
+        color:#3995d3;
+        line-height:1.4em;
+        position:relative;
+        padding-right:22px;
+    }
+
+    .clear-value{
+        font-size:18px;
+        line-height:1em;
+        position:absolute;
+        top:2px;
+        right:4px;
+        cursor:pointer;
+        color:#ccc;
+
+        &:hover{
+            color:red;
+        }
+    }
+    }
+
+    .simple-pager-info{
+        position:absolute;
+        bottom:8px;
+        right:0;
+        text-align:right;
+        margin-right:12px;
+        color:#666;
+        font-size:12px;
+        width:420px;
+
+        span{
+            margin:0 5px;
+        }
+
+        button{
+            border:1px solid #cfdadd;
+            margin-left:-1px;
+            background-color:#ffffff;
+            color:#d3dde0;
+            padding:3px 15px;
+
+            &:hover{
+                background-color:#f3f4f6;
+            }
+        }
+
+        .current-page{
+            margin-left:20px;
+            color:#ea2e49;
+        }
+
+        .pager-prev{
+            margin-left:10px;
+        }
+    }
+
+    .datalist-sort, .datalist-data{
+        padding:0 10px;
+    }
+
+    .sort-label{
+        float:left;
+        text-align:center;
+        display:inline-block;
+        line-height:44px;
+        margin-left:10px;
+    }
+
+    .sort-fields{
+        float:left;
+        margin-left:20px;
+        margin-top:8px;
+
+        a{
+            float:left;
+            border:none;
+            border:1px solid #e7ecf1;
+            min-width:80px;
+            color:#999;
+            font-size:12px;
+            padding:4px 15px;
+            text-align:center;
+            margin-right:-1px;
+            
+            &:hover{
+                border-color:#3995d3;
+                position:relative;
+                text-decoration:none;
+            }
+
+            i{
+                display:inline-block;
+                width:10px;
+                height:1em;
+                overflow:hidden;
+                margin-right:-10px;
+                background:url(images/i-sort-default.png) no-repeat right center;
+            }
+        }
+
+        .active{
+            border-color:#3995d3;
+            position:relative;
+            color:#3995d3;
+        }
+
+        .active.sort-asc{
+            i{
+            background-image:url(images/i-sort-asc.png);}
+        }
+
+        .active.sort-desc{
+            i{
+            background-image:url(images/i-sort-desc.png);}
+        }
+    }
+
+    .datalist-type{
+        float:right;
+        font-size:12px;
+        line-height:44px;
+        margin-right:5px;
+        
+        .split-line{
+            padding:0 8px;
+            color:#bbb;
+            font-size:14px;
+            font-weight:300;
+        }
+
+        .simple-list, .pic-list{
+            color:#999;
+            padding-left:15px;
+            &:hover{
+                text-decoration:none;
+            }
+        }
+
+        .simple-list{
+            background:url(images/database/icon-simple-list.png) no-repeat left center;
+        }
+
+        .pic-list{
+            background:url(images/database/icon-pic-list.png) no-repeat left center;
+        }
+
+        .simple-list.active{
+            color:#3995d3;
+            background-image:url(images/database/icon-simple-list-active.png);
+        }
+
+        .pic-list.active{
+            color:#3995d3;
+            background-image:url(images/database/icon-pic-list-active.png);
+        }
+    }
+}

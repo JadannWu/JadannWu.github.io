@@ -131,7 +131,7 @@ gulp.task('jslib', function () {
 
 // 清空dist
 gulp.task('clean', function() {
-    return gulp.src('/dist')
+    return gulp.src('./dist')
         .pipe(clean({force: true}));
 });
 

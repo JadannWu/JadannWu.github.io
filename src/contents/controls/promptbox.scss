@@ -1,0 +1,214 @@
+﻿/* promptBox 提示框 */
+// 遮挡层
+.promptBox-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+    z-index: 1040;
+    display: none;
+}
+// 提示层
+.promptBox-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1050;
+    outline: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: none;
+
+    .promptBox-message-wrap {
+        margin: 30px auto;
+        background-color: #f3fbf9;
+        width: 450px;
+        /*-moz-border-radius: 5px;
+        border-radius: 5px;*/
+        position: relative;
+        // 标题
+        .promptBox-title-wrap {
+            min-height: 17px;
+            padding: 10px;
+            padding-bottom: 0;
+            *height: 17px;
+
+            .promptBox-close-wrap{
+                width:25px;
+                float:right;
+            }
+
+            .close {
+                border: none;
+                float: right;
+                padding: 0;
+                width: 18px;
+                height:18px;
+                background: transparent url(images/btn-close-prompt.png) no-repeat center center;
+
+                &:hover {
+                    background-image: url(images/btn-close-prompt-active.png);
+                }
+
+                span {
+                    visibility: hidden;
+                }
+            }
+
+            .promptBox-title {
+                text-align: left;
+                font-weight: bold;
+                font-size: 14px;
+                margin:0;
+                color:#fc8d00;
+                margin-right:30px;
+            }
+        }
+        // 提示信息
+        .promptBox-message {
+            padding: 15px 10px;
+            position: relative;
+            font-size: 12px;
+            color: #333;
+
+            >div{
+                background-color:#FFFFFF;
+            }
+        }
+        // 按钮区域
+        .promptBox-btn-wrap {
+            padding: 10px;
+            padding-top:15px;
+            text-align: right;
+            border-top: 1px solid #e5e5e5;
+
+            /*input {
+                background-color: #003e68;
+                border: none;
+                margin-right: 10px;
+                padding: 0 20px;
+                color: #FFFFFF;
+                font-size: 12px;
+                line-height: 25px;
+
+                &:hover {
+                    background-color: #015892;
+                    color: #FFFFFF;
+                }
+            }
+
+            .btn-active {
+                background-color: #015892;
+                color: #FFFFFF;
+            }*/
+        }
+    }
+}
+
+.redAlert{
+    .promptBox-message-wrap{
+        border-radius: 5px;
+        background-color: #fff;
+        .promptBox-title-wrap{
+            padding:10px;
+
+            border-bottom: 1px solid #cfdadd;
+            .promptBox-close-wrap{
+                display: none;
+                .close {
+                    background: transparent url("/content/images/btn-close-prompt.png") no-repeat center center;
+
+                    &:hover {
+                        background: transparent url("/content/images/btn-close-prompt.png") no-repeat center center;
+                    }
+                }
+
+            }
+            .promptBox-title {
+                color:#000;
+            }
+        }
+        .promptBox-message{
+            padding:0;
+            text-align: center;
+            margin:35px 0 25px 0;
+        }
+        .promptBox-btn-wrap{
+            border: none;
+            padding:10px;
+            .btn-default{
+                width: 80px;
+                height:25px;
+                line-height: 25px;
+                padding:0;
+                border:1px solid #ea2e49;
+                border-radius: 3px;
+                color:#ea2e49;
+                outline-style: none;
+                margin-left: 10px;
+            }
+            .btn-default:hover{
+                background-color: #ea2e49;
+                color:#fff;
+            }
+        }
+    }
+
+}
+
+.thjk{
+    .promptBox-message-wrap{
+        border-radius: 3px;
+        background-color: #fff;
+        .promptBox-title-wrap{
+            padding:10px;
+            line-height: 40px;
+            border-top-right-radius: 3px;
+            border-top-left-radius: 3px;
+            background-color: #ecf0f4;
+            .promptBox-close-wrap{
+                .close {
+                    background: transparent url("/content/images/btn-close-thjk.png") no-repeat center center;
+
+                    &:hover {
+                        background: transparent url("/content/images/btn-close-thjk-on.png") no-repeat center center;
+                    }
+                }
+
+            }
+            .promptBox-title {
+                color:#000;
+            }
+        }
+        .promptBox-message{
+            text-align: center;
+            padding: 36px 30px;
+        }
+        .promptBox-btn-wrap{
+            border: none;
+            padding:0;
+            padding-bottom: 12px;
+            text-align: center;
+            .btn-default{
+                width: 80px;
+                height:30px;
+                padding:0;
+                border-radius: 3px;
+                color:#fff;
+                outline-style: none;
+                margin-left: 10px;
+                background-color: #3995d3;
+            }
+            .btn-default:hover{
+                opacity: .8;
+            }
+        }
+    }
+
+}

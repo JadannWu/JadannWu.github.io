@@ -1,0 +1,44 @@
+.h1 {
+  font-size: 38px;
+  color: #ea2e49;
+  font-weight: normal; }
+
+.h2 {
+  font-size: 24px;
+  color: #3995d3;
+  font-weight: normal; }
+
+.h3 {
+  font-size: 20px;
+  color: #3995d3;
+  font-weight: normal; }
+
+.h4 {
+  font-size: 16px;
+  color: #3995d3;
+  font-weight: normal; }
+
+.h5 {
+  font-size: 14px;
+  color: #3995d3;
+  font-weight: normal; }
+
+.h6 {
+  font-size: 12px;
+  color: #3995d3;
+  font-weight: normal; }
+
+.text-center {
+  text-align: center; }
+
+.mb10 {
+  margin-bottom: 10px; }
+
+.mb20 {
+  margin-bottom: 20px; }
+
+.pl10 {
+  padding-left: 10px; }
+
+.pr10 {
+  padding-right: 10px; }

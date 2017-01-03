@@ -1,0 +1,192 @@
+﻿.table-show-wrap {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 12px;
+
+    // 顶部表头
+    .tb-header {
+        overflow: hidden;
+        background-color: #FFFFFF;
+        position: relative;
+        z-index:1;
+
+        .table-show {
+            width: auto;
+
+            td {
+                padding:0 5px;
+                text-align:left;
+                vertical-align:middle;
+            }
+        }
+    }
+    // 顶部固定表头
+    .tb-header-fixed {
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: inline-block;
+        z-index: 9;
+        background-color: #FFFFFF;
+
+        .table-show {
+            width: auto;
+
+            td {
+                text-align:left;
+                vertical-align:middle;
+                padding:0 5px;
+            }
+        }
+    }
+    // 固定列
+    .tb-body-fixed {
+        left: 0;
+        position: absolute;
+        background-color: #FFFFFF;
+        z-index: 8;
+    }
+
+    .tb-body .table-show thead th,
+    .tb-body-fixed .table-show thead th {
+        padding: 0 5px;
+        border-top: none;
+        height: 0;
+        border-bottom: none;
+    }
+
+    .tb-header-fixed .table-show thead th,
+    .tb-header .table-show thead th {
+        padding: 0 5px;
+        height: 40px;
+    }
+
+    .tb-header-fixed .table-show thead {
+        th.rowspan-2 {
+            height: 80px;
+        }
+
+        th.rowspan-3 {
+            height: 120px;
+        }
+
+        th.rowspan-4 {
+            height: 160px;
+        }
+    }
+
+    .tb-header .table-show thead{
+        th.rowspan-2 {
+            height: 80px;
+        }
+
+        th.rowspan-3 {
+            height: 120px;
+        }
+
+        th.rowspan-4 {
+            height: 160px;
+        }
+    }
+
+    .tb-body .table-show tbody td,.tb-body-fixed .table-show tbody td{
+        text-align:left;
+    }
+
+    // 主体表格
+    .tb-body {
+        overflow: hidden;
+    }
+    // 滚动条
+    .scroll-bar-wrap {
+        position: absolute;
+        height: 3px;
+        background-color: #999999;
+        top: 100%;
+        margin-top: -5px;
+        right: 0;
+        left: 0;
+        cursor: pointer;
+        display:none;
+
+        .left-corner {
+            position: absolute;
+            top: -2px;
+            left: 0;
+            background: url(images/bg-btn-sroll.png) no-repeat left center;
+        }
+
+        .right-corner {
+            padding-right: 3px;
+            margin-left: 3px;
+            background: url(images/bg-btn-sroll.png) no-repeat right center;
+        }
+
+        .scroll-btn {
+            display: block;
+            height: 6px;
+            background-color: #54cc9e;
+        }
+    }
+}
+
+.table-compare{
+    overflow:visible;
+
+    .tb-body-fixed{
+        
+        td, th{
+        font-weight:bold;
+        padding-right:25px;
+        }
+    }
+
+
+    .i-switch{
+        display:inline-block;
+        width:18px;
+        height:18px;
+        background-repeat:no-repeat;
+        background-position:center 1px;
+        vertical-align:middle;
+        cursor:pointer;
+        margin:7px 5px 7px 0;
+    }
+   
+    .switch-expand{
+        background-image:url(../images/i-switch-collapse.png);
+    }
+
+    .switch-collapse{
+        background-image:url(../images/i-switch-expand.png);
+    }
+
+    .td-readonly{
+        background-color:#ecf0f4;
+    }
+
+    .table-show{
+        table-layout:fixed;
+        width:100%;
+
+        table{
+            table-layout:fixed;
+        width:100%;
+        td{
+            border:none;
+            height:auto;
+        }
+        }
+    }
+
+    .height-auto{
+        .text-nowrap{
+            white-space:normal;
+        }
+    }
+}
+
+
+.btn-scroll-left, .btn-scroll-right{
+    display:none;
+}

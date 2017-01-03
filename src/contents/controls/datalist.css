@@ -1,0 +1,155 @@
+.datalist-group {
+  border: 1px solid #3995d3;
+  background-color: #FFF;
+  margin-bottom: 40px;
+  font-size: 12px; }
+  .datalist-group .datalist-title {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: normal;
+    background: #3995d3 url(images/icon-folder.png) no-repeat 10px center;
+    margin: 0;
+    padding: 12px 0 12px 35px; }
+  .datalist-group .datalist-filter {
+    padding: 0 10px;
+    border-bottom: 1px solid #e7ecf1;
+    font-size: 12px;
+    position: relative; }
+    .datalist-group .datalist-filter .filter-group {
+      border-bottom: 1px solid #e7ecf1; }
+    .datalist-group .datalist-filter .last-filter-group {
+      border-bottom: none; }
+    .datalist-group .datalist-filter .filter-type {
+      color: #666666;
+      background-color: #f3f4f6;
+      width: 80px;
+      text-align: center;
+      display: inline-block;
+      line-height: 39px;
+      float: left; }
+  .datalist-group .filter-result {
+    margin-top: 10px;
+    border-bottom: 1px solid #e7ecf1;
+    background-color: #f3f4f6;
+    position: relative;
+    padding-right: 420px;
+    min-height: 40px; }
+    .datalist-group .filter-result .result-text {
+      line-height: 39px;
+      padding-left: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #333; }
+    .datalist-group .filter-result .result-item {
+      margin: 0 5px; }
+    .datalist-group .filter-result #selectValueWrap {
+      padding-right: 10px; }
+    .datalist-group .filter-result .select-value {
+      display: inline-block;
+      padding: 4px 6px;
+      margin-left: 10px;
+      border: 1px solid #3995d3;
+      color: #3995d3;
+      line-height: 1.4em;
+      position: relative;
+      padding-right: 22px; }
+    .datalist-group .filter-result .clear-value {
+      font-size: 18px;
+      line-height: 1em;
+      position: absolute;
+      top: 2px;
+      right: 4px;
+      cursor: pointer;
+      color: #ccc; }
+      .datalist-group .filter-result .clear-value:hover {
+        color: red; }
+  .datalist-group .simple-pager-info {
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    text-align: right;
+    margin-right: 12px;
+    color: #666;
+    font-size: 12px;
+    width: 420px; }
+    .datalist-group .simple-pager-info span {
+      margin: 0 5px; }
+    .datalist-group .simple-pager-info button {
+      border: 1px solid #cfdadd;
+      margin-left: -1px;
+      background-color: #ffffff;
+      color: #d3dde0;
+      padding: 3px 15px; }
+      .datalist-group .simple-pager-info button:hover {
+        background-color: #f3f4f6; }
+    .datalist-group .simple-pager-info .current-page {
+      margin-left: 20px;
+      color: #ea2e49; }
+    .datalist-group .simple-pager-info .pager-prev {
+      margin-left: 10px; }
+  .datalist-group .datalist-sort, .datalist-group .datalist-data {
+    padding: 0 10px; }
+  .datalist-group .sort-label {
+    float: left;
+    text-align: center;
+    display: inline-block;
+    line-height: 44px;
+    margin-left: 10px; }
+  .datalist-group .sort-fields {
+    float: left;
+    margin-left: 20px;
+    margin-top: 8px; }
+    .datalist-group .sort-fields a {
+      float: left;
+      border: none;
+      border: 1px solid #e7ecf1;
+      min-width: 80px;
+      color: #999;
+      font-size: 12px;
+      padding: 4px 15px;
+      text-align: center;
+      margin-right: -1px; }
+      .datalist-group .sort-fields a:hover {
+        border-color: #3995d3;
+        position: relative;
+        text-decoration: none; }
+      .datalist-group .sort-fields a i {
+        display: inline-block;
+        width: 10px;
+        height: 1em;
+        overflow: hidden;
+        margin-right: -10px;
+        background: url(images/i-sort-default.png) no-repeat right center; }
+    .datalist-group .sort-fields .active {
+      border-color: #3995d3;
+      position: relative;
+      color: #3995d3; }
+    .datalist-group .sort-fields .active.sort-asc i {
+      background-image: url(images/i-sort-asc.png); }
+    .datalist-group .sort-fields .active.sort-desc i {
+      background-image: url(images/i-sort-desc.png); }
+  .datalist-group .datalist-type {
+    float: right;
+    font-size: 12px;
+    line-height: 44px;
+    margin-right: 5px; }
+    .datalist-group .datalist-type .split-line {
+      padding: 0 8px;
+      color: #bbb;
+      font-size: 14px;
+      font-weight: 300; }
+    .datalist-group .datalist-type .simple-list, .datalist-group .datalist-type .pic-list {
+      color: #999;
+      padding-left: 15px; }
+      .datalist-group .datalist-type .simple-list:hover, .datalist-group .datalist-type .pic-list:hover {
+        text-decoration: none; }
+    .datalist-group .datalist-type .simple-list {
+      background: url(images/database/icon-simple-list.png) no-repeat left center; }
+    .datalist-group .datalist-type .pic-list {
+      background: url(images/database/icon-pic-list.png) no-repeat left center; }
+    .datalist-group .datalist-type .simple-list.active {
+      color: #3995d3;
+      background-image: url(images/database/icon-simple-list-active.png); }
+    .datalist-group .datalist-type .pic-list.active {
+      color: #3995d3;
+      background-image: url(images/database/icon-pic-list-active.png); }
